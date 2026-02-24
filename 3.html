@@ -1,23 +1,73 @@
 <!DOCTYPE html>
-<html>
 <head>
-   <title>SISS</title>
-     <meta charset="UFT-8">
-   </head>
-   <body>
-     <h1><a href="index.html">SISS</a></h1>
-     <hr width="100%">
-     <br>
-        <ol>
-        <li><a href="1.html">C mentoring</a></li>
-        <li><a href="2.html">LINUX STUDY</a></li>
-        <li><a href="3.html">WEB STUDY</a></li>
-     </ol>
-     <br>
-     <hr width="100%">
-    <h2>WEB STUDY</h2>
-    웹 해킹 기초인 웹 스터디를 진행합니다.
+    <meta charset="utf-8">
+    <title>동물의 숲 일지</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .tobecontinue{
+            text-align: center;
+            margin:auto;
+            font-size: large;
+            color:white;
+        }
+
+        .final{
+            text-align: center;
+            margin:30px;
+            background-color: rgb(50, 82, 50);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="INTRO">Animal Crossing Diary</h1>
     
-    
-    </body>
-     </html>
+    <div class="grid">
+        <div class="list">
+            <a href="1.html" title="봄의 이야기"><img class="season" src="img/spring.png"></a>
+            <a href="2.html" title="여름의 이야기"><img class="season" src="img/summer.png"></a>
+            <a href="3.html" title="가을의 이야기"><img class="season" id="select" src="img/fall.png"></a>
+            <a href="4.html" title="가을의 이야기"><img class="season" src="img/winter.png"></a>
+            <a href="index.html" id="back">처음으로 돌아가기</a>
+        </div>
+        <div class="a">
+            <h2>Autumn</h2>
+            <br><br>
+                
+            <div class="final">
+                <h3 class="fallintro">2024년도 9월 1일, 무인도에서 처음 맞이하는 가을의 모습은 어떨까요?<br> 두근거리는 만큼 즐거운 일이 가득할 거에요.</h3>
+                <div class="tobecontinue">
+                    <script>
+                        var today = new Date();
+                        var year = today.getFullYear();
+                        var month = today.getMonth()+1;
+                        var day = today.getDate();
+                        var hour = today.getHours();
+                        var minute = today.getMinutes();
+                        document.write('오늘은'+year+'년'+month+'월'+day+'일 입니다.'+'<br/>');
+                        document.write('현재 시간은'+hour+'시'+minute+'분 입니다.');
+                    </script>
+                    <br><br><br>
+                    <script>
+                        var today = new Date();
+                        var year = today.getFullYear();
+                        var date1 = new Date("September 1, 2024");
+                        var diff = date1.getTime() - today.getTime();
+                        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                        document.write('가을까지 앞으로 ' + days + '일 남았습니다.');
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+
+<footer>
+    <p align="right">소프트웨어학부 컴퓨터과학과 24학번 이채민 <br>lee171@sookmyung.ac.kr</p>
+</footer>

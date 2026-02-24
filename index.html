@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html>
 <head>
-   <title>SISS</title>
-     <meta charset="UFT-8">
-   </head>
-   <body>
-     <h1><a href="index.html">SISS</a></h1>
-     <hr width="100%">
-     <br>
-        <ol>
-        <li><a href="1.html">C mentoring</a></li>
-        <li><a href="2.html">LINUX STUDY</a></li>
-        <li><a href="3.html">WEB STUDY</a></li>
-     </ol>
-     <br>
-     <hr width="100%">
-     <p>SISS는 
-      <a href="https://www.sookmyung.ac.kr/kr/index.do" target="_blank">
-         숙명 여자 대학교</a>의 정보 보안 동아리(Sookmyung Information Security Study)로,<br> 총 세가지 스터디를 진행합니다.
+    <meta charset="utf-8">
+    <title>동물의 숲 일지</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1 class="INTRO">Animal Crossing Diary</h1>
     
-    
-    </body>
-     </html>
+    <div class="grid">
+        <div class="list">
+            <a href="1.html" title="봄의 이야기"><img class="season" src="img/spring.png"></a>
+            <a href="2.html" title="여름의 이야기"><img class="season" src="img/summer.png"></a>
+            <a href="3.html" title="가을의 이야기"><img class="season" src="img/fall.png"></a>
+            <a href="4.html" title="가을의 이야기"><img class="season" src="img/winter.png"></a>
+          
+        </div>
+
+        <div class="content1">
+        <video src="img/INTRO.mp4" autoplay controls></video>
+        <br><button id="b1">동물의 숲은 무슨 게임일까?</button>
+        <p id="m1"></p> 
+        <script type = "text/javascript">
+            document.getElementById("b1").onclick= click_button;
+            function click_button() {
+                document.getElementById("m1").innerHTML=" 플레이어가 동물들이 살고 있는 숲속의 마을에 합류해 살면서 산책하고 곤충 채집을 하고 낚시를 하고 동물 이웃들과 교류하고 집을 인테리어하는 등의 활동을 하는 게임입니다."
+                        }
+        </script>
+
+        <br><br><blockquote>
+            "「모여봐요 동물의 숲」에서는 「Nook Inc.」에서 제공하는 「무인도 이주 패키지 플랜」에 참가하여 무인도로 이주, 하나하나 내 손으로 꾸려 나가는 새로운 생활이 시작됩니다. 당신은 어떤 생활을 꿈꾸고 계신가요?"
+        </blockquote>
+        <img class="photo" src="img/main.png">
+        <h3>눈이 오던 겨울 어느날,
+            작지만 큰 무인도에 도착해 친구들과 함께 이곳을 개척해나가는 과정을 이 사이트에 담았습니다. 이 무인도는 앞으로 어떻게 변화할까요?</h3>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p align="right">소프트웨어학부 컴퓨터과학과 24학번 이채민 <br>lee171@sookmyung.ac.kr</p>
+</footer>
